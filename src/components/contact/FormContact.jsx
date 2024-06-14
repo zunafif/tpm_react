@@ -27,7 +27,6 @@ function FormContact(props) {
                                 <button id="myBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                                     Submit
                                 </button>
-                                <a href="http://localhost/tpm_html/index.html" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="kembali ke halaman sebelumnya">Back</a>
                                 <p><span id="pesanSukses"></span></p>
                             </fieldset>
                         </div>
