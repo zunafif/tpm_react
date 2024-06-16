@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './App.css'
-import './components/customJs.js'
 import './components/bootstrap.min.js'
 import './components/bootstrap.bundle.min.js'
 import './components/bootstrap.min.css'
