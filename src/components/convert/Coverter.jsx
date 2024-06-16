@@ -35,7 +35,7 @@ function Converter(props) {
                         <div class="p-3 mb-2 bg-primary text-white">
                             <form action="">
                                 <p>
-                                    <label>Fahrenheit </label>
+                                    <p>Fahrenheit </p>
                                     <input value={tempF} onChange={handleChangeF} type="number" placeholder="Fahrenheit"/> 
                                 </p>
                                 <h2>{suhuF}°C</h2>
@@ -46,7 +46,7 @@ function Converter(props) {
                         <div class="p-3 mb-2 bg-primary text-white">
                             <form action="">
                                 <p>
-                                    <label>Celcius </label>
+                                    <p>Celcius </p>
                                     <input value={tempC} onChange={handleChangeC} type="number" placeholder="Fahrenheit"/> 
                                 </p>
                                 <h2>{suhuC}°F</h2>
