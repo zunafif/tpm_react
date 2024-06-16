@@ -27,19 +27,13 @@ function App() {
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                
                     <span class="dropdown-item nav-link active" aria-current="page"><Link to="/">Home</Link></span>
                   </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Menu
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><span class="dropdown-item"><Link to="/converter">Temp Converter</Link></span></li>
-                          <li><span class="dropdown-item"><Link to="/todo">To Do List</Link></span></li>
-                          <li><span class="dropdown-item"><Link to="/contact">Contact Me</Link></span></li>
-                      </ul>
+                  <li class="nav-item">
+                    <span class="dropdown-item nav-link active" aria-current="page"><Link to="/converter">Temp Converter</Link></span>
                   </li>
+                  <li class="nav-item"><span class="dropdown-item nav-link active" aria-current="page"><Link to="/todo">To Do List</Link></span></li>
+                  <li class="nav-item"><span class="dropdown-item nav-link active" aria-current="page"><Link to="/contact">Contact Me</Link></span></li>
                   </ul>
                   <ul class="navbar-nav">
                       <li class="nav-item">
@@ -58,7 +52,6 @@ function App() {
         </div>
       </BrowserRouter>
       <Footer></Footer>
-
     </>
   )
 }
