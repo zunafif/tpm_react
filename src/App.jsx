@@ -6,7 +6,7 @@ import './components/bootstrap.bundle.min.js'
 import './components/bootstrap.min.css'
 import './components/external.css'
 import Convert from './Convert.jsx'
-import Index from './Index.jsx'
+import Index from './Biodata.jsx'
 import Contact from './Contact.jsx';
 import Todo from './Todo.jsx';
 import Footer from './components/Footer.jsx'
