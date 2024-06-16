@@ -5,8 +5,6 @@ function MainTodo(props) {
     return(
         <>
             <main>
-                <FormTodo></FormTodo>
-                <br />
                 <TableTodo></TableTodo>
             </main>
         </>

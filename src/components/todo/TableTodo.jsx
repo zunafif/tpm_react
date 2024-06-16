@@ -1,6 +1,32 @@
+import { useState } from "react";
+import FormTodo from "./FormTodo.jsx";
+import jsonData from "./data.json";
+
 function TableTodo(props) {
+
+    const [todoItem, setTodoItem] = useState(jsonData)
+
+    const tableRow = todoItem.map((info) => {
+        return (
+            <tr>
+                <td>{info.date}</td>
+                <td>{info.time}</td>
+                <td>{info.task}</td>
+            </tr>
+        )
+    })
+
+    const addRows = (data) => {
+        const totalStudents = todoItem.length;
+        data.id = totalStudents + 1;
+        const updatedTodoItem = [...todoItem];
+        updatedTodoItem.push(data);
+        setTodoItem(updatedTodoItem);
+    };
+
     return(
         <>
+            <FormTodo func={addRows}></FormTodo>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -15,26 +41,7 @@ function TableTodo(props) {
                                         <th>Todo</th>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>2024/06/14</td>
-                                            <td>20:00</td>
-                                            <td>Finish Project 1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2024/06/15</td>
-                                            <td>20:00</td>
-                                            <td>Finish Project 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2024/06/16</td>
-                                            <td>20:00</td>
-                                            <td>Finish Project 3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2024/06/17</td>
-                                            <td>20:00</td>
-                                            <td>Finish Project 4</td>
-                                        </tr>
+                                        {tableRow}
                                     </tbody>
                                 </table>
                             </fieldset>

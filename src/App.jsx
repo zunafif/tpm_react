@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, Route, Routes, BrowserRouter } from "react-router-dom";
 import './App.css'
-import './components/customJs.js'
 import './components/bootstrap.min.js'
 import './components/bootstrap.bundle.min.js'
 import './components/bootstrap.min.css'
@@ -11,6 +10,7 @@ import Index from './Index.jsx'
 import Contact from './Contact.jsx';
 import Todo from './Todo.jsx';
 import Footer from './components/Footer.jsx'
+import LiveClockUpdate from './components/liveClock/clock.jsx';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
         <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
               <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Biodata</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -43,7 +43,7 @@ function App() {
                   </ul>
                   <ul class="navbar-nav">
                       <li class="nav-item">
-                          <div class="d-flex nav-item" id="txt"></div>
+                          <LiveClockUpdate></LiveClockUpdate>
                       </li>
                   </ul>
               </div>

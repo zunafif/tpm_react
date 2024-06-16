@@ -18,7 +18,7 @@ function Navbar(props) {
                             Menu
                             </a>
                             <ul class="dropdown-menu">
-                               
+                                <li><span class="dropdown-item"><Link to="/converter">Farenheit Coverter</Link></span></li>
                                 <li><a class="dropdown-item" href="http://localhost/tpm_html/contact.html" target="_blank">Hubungi Saya</a></li>
                             </ul>
                         </li>
