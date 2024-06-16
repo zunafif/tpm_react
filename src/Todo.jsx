@@ -1,6 +1,6 @@
 import React from 'react'
-import './components/bootstrap.min.js'
-import './components/bootstrap.bundle.min.js'
+// import './components/bootstrap.min.js'
+// import './components/bootstrap.bundle.min.js'
 import './components/bootstrap.min.css'
 import './components/external.css'
 import HeaderTodo from './components/todo/HeaderTodo.jsx'

@@ -1,8 +1,8 @@
 import React from 'react'
 
 import './App.css'
-import './components/bootstrap.min.js'
-import './components/bootstrap.bundle.min.js'
+// import './components/bootstrap.min.js'
+// import './components/bootstrap.bundle.min.js'
 import './components/bootstrap.min.css'
 import './components/external.css'
 import Navbar from './Navbar.jsx'

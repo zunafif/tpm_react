@@ -23,9 +23,9 @@ class LiveClockUpdate extends Component {
 
   render() {
     return (
-        <li class="nav-item">
-            {this.state.date.toLocaleTimeString()}.
-        </li>
+      <li class="nav-item">
+        {this.state.date.toLocaleTimeString()}.
+      </li>
     );
   }
 }

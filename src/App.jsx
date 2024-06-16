@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, Route, Routes, BrowserRouter } from "react-router-dom";
 import './App.css'
-import './components/bootstrap.min.js'
-import './components/bootstrap.bundle.min.js'
+// import './components/bootstrap.min.js'
+// import './components/bootstrap.bundle.min.js'
 import './components/bootstrap.min.css'
 import './components/external.css'
 import Convert from './Convert.jsx'
@@ -36,9 +36,7 @@ function App() {
                   <li class="nav-item"><span class="dropdown-item nav-link active" aria-current="page"><Link to="/contact">Contact Me</Link></span></li>
                   </ul>
                   <ul class="navbar-nav">
-                      <li class="nav-item">
-                          <LiveClockUpdate></LiveClockUpdate>
-                      </li>
+                    <LiveClockUpdate></LiveClockUpdate>
                   </ul>
               </div>
               </div>
